@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  <header>
+    <div class="logo" tabindex="0">Umesh Sah</div>
+    <nav aria-label="Primary Navigation">
+      <a href="#home" tabindex="0">Home</a>
+      <a href="#services" tabindex="0">Services</a>
+      <a href="#portfolio" tabindex="0">Portfolio</a>
+      <a href="#contact" tabindex="0">Contact</a>
+      <a href="resume.pdf" target="_blank" rel="noopener" tabindex="0" aria-label="Resume" title="Open Resume (PDF)">Resume</a>
+    </nav>
+    <button aria-label="Toggle dark/light theme" class="theme-toggle" id="themeToggle" tabindex="0" title="Toggle dark/light theme">
+      <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <title>Toggle Theme Icon</title>
+        <circle cx="12" cy="12" r="5" />
+        <line x1="12" y1="1" x2="12" y2="3" />
+        <line x1="12" y1="21" x2="12" y2="23" />
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+        <line x1="1" y1="12" x2="3" y2="12" />
+        <line x1="21" y1="12" x2="23" y2="12" />
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+      </svg>
+    </button>
+  </header>
+
+  <main>
+    <!-- <section id="home" aria-label="Home section">
+      <div class="container"> -->
+        <section id="home" class="container" tabindex="0" aria-label="Home section introduction">
+        <img src="img/Umesh.jpg" alt="" class="profile-photo" />
+        <h1>Crafting Elegant Software Solutions</h1>
+        <p>Hi, I'm Umesh, a passionate software developer building beautiful and functional web experiences.</p>
+        <div class="social-links" role="list">
+          <a href="https://github.com/umeshsah711" target="_blank" rel="noopener" aria-label="GitHub" role="listitem" tabindex="0" title="GitHub">
+            <svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+              <path d="M12 0C5.37 0 0 5.373 0 12a12 12 0 008.207 11.385c.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.725-4.042-1.61-4.042-1.61-.546-1.384-1.333-1.753-1.333-1.753-1.09-.745.083-.73.083-.73 1.204.084 1.837 1.236 1.837 1.236 1.07 1.833 2.807 1.304 3.492.997.108-.775.42-1.305.763-1.605-2.665-.3-5.467-1.332-5.467-5.933 0-1.31.47-2.38 1.236-3.22-.124-.303-.536-1.523.117-3.176 0 0 1.01-.323 3.3 1.23a11.5 11.5 0 016 0c2.29-1.553 3.3-1.23 3.3-1.23.655 1.653.243 2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.628-5.48 5.923.43.37.82 1.11.82 2.24 0 1.62-.015 2.928-.015 3.324 0 .32.22.69.825.57A12.006 12.006 0 0024 12c0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/umeshsah711/" target="_blank" rel="noopener" aria-label="LinkedIn" role="listitem" tabindex="0" title="LinkedIn">
+            <svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+              <path d="M19 0h-14c-2.757 0-5 2.243-5 5v14c0 2.757 2.243 5 5 5h14c2.757 0 5-2.243 5-5v-14c0-2.757-2.243-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.801-1.75-1.789 0-.989.784-1.79 1.75-1.79s1.75.8 1.75 1.79c0 .988-.784 1.789-1.75 1.789zm13.5 11.268h-3v-5.555c0-1.327-.472-2.232-1.656-2.232-.903 0-1.44.603-1.679 1.186-.086.21-.108.5-.108.792v5.809h-3v-10h3v1.387c.397-.613 1.1-1.486 2.68-1.486 1.956 0 3.43 1.275 3.43 4.017v5.082z" />
+            </svg>
+          </a>
+          <!-- <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter" role="listitem" tabindex="0" title="Twitter">
+            <svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+              <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.609 1.794-1.574 2.163-2.724-.949.555-2.005.959-3.127 1.184-.897-.959-2.178-1.559-3.594-1.559-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.166-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.025-1.566-.247-2.229-.616v.061c0 2.388 1.697 4.384 3.946 4.835-.693.188-1.452.232-2.224.084.623 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.038 2.179 1.397 4.768 2.21 7.557 2.21 9.054 0 14-7.496 14-13.986 0-.21 0-.423-.015-.637.964-.689 1.8-1.56 2.46-2.548l-.047-.02z" />
+            </svg> -->
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" aria-label="Services section">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <div class="services-grid">
+          <article class="service-card" tabindex="0" role="article" aria-label="Web Development Service">
+            <div class="service-icon" aria-hidden="true">💻</div>
+            <h3>Web Development</h3>
+            <p>Building responsive, modern websites and webapps using latest technologies.</p>
+          </article>
+          <article class="service-card" tabindex="0" role="article" aria-label="UI/UX Design Service">
+            <div class="service-icon" aria-hidden="true">🎨</div>
+            <h3>UI / UX Design</h3>
+            <p>Designing intuitive user interfaces and engaging user experiences.</p>
+          </article>
+          <article class="service-card" tabindex="0" role="article" aria-label="Mobile App Development Service">
+            <div class="service-icon" aria-hidden="true">📱</div>
+            <h3>Mobile Apps</h3>
+            <p>Developing cross-platform mobile applications for iOS and Android.</p>
+          </article>
+          <article class="service-card" tabindex="0" role="article" aria-label="Consulting Service">
+            <div class="service-icon" aria-hidden="true">🤝</div>
+            <h3>Consulting</h3>
+            <p>Providing expert advice to help you plan and execute your projects.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" aria-label="Portfolio section">
+      <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="portfolio-grid" role="list">
+          <div class="portfolio-item" role="listitem" tabindex="0" aria-label="Project One">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=640&q=80" alt="Project One Screenshot" />
+            <div class="portfolio-info">
+              <h4>Project One</h4>
+              <p>Responsive e-commerce website with modern features.</p>
+              <a href="https://github.com/yourgithub/project-one" target="_blank" rel="noopener noreferrer" class="project-link" tabindex="0">View on GitHub</a>
+            </div>
+          </div>
+          <div class="portfolio-item" role="listitem" tabindex="0" aria-label="Project Two">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=640&q=80" alt="Project Two Screenshot" />
+            <div class="portfolio-info">
+              <h4>Project Two</h4>
+              <p>Mobile app for fitness tracking and goal setting.</p>
+              <a href="https://github.com/yourgithub/project-two" target="_blank" rel="noopener noreferrer" class="project-link" tabindex="0">View on GitHub</a>
+            </div>
+          </div>
+          <div class="portfolio-item" role="listitem" tabindex="0" aria-label="Project Three">
+            <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=640&q=80" alt="Project Three Screenshot" />
+            <div class="portfolio-info">
+              <h4>Project Three</h4>
+              <p>Custom CMS for blogging with a clean interface.</p>
+              <a href="https://github.com/yourgithub/project-three" target="_blank" rel="noopener noreferrer" class="project-link" tabindex="0">View on GitHub</a>
+            </div>
+          </div>
+          <!-- <div class="portfolio-item" role="listitem" tabindex="0" aria-label="Project Four">
+            <img src="https://images.unsplash.com/photo-1502880200382-21358b9c7c6f?auto=format&fit=crop&w=640&q=80" alt="Project Four Screenshot" />
+            <div class="portfolio-info">
+              <h4>Project Four</h4>
+              <p>Portfolio website with interactive elements and animations.</p>
+              <a href="https://github.com/yourgithub/project-four" target="_blank" rel="noopener noreferrer" class="project-link" tabindex="0">View on GitHub</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" aria-label="Contact section">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <form class="contact-form" aria-label="Contact form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required minlength="2" placeholder=" " aria-required="true" aria-describedby="nameHelp" />
+            <label for="name" class="floating-label">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required placeholder=" " aria-required="true" aria-describedby="emailHelp" />
+            <label for="email" class="floating-label">Your Email</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="4" required placeholder=" " aria-required="true"></textarea>
+            <label for="message" class="floating-label">Your Message</label>
+          </div>
+          <button type="submit" class="submit-btn" aria-label="Send Message">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Umesh Sah. All rights reserved.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
