@@ -320,6 +320,7 @@
       margin-bottom: 3rem;
       background: linear-gradient(90deg, #56d0e3, #fbb32d);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     .portfolio-grid {
@@ -378,6 +379,7 @@
       margin-bottom: 3rem;
       background: linear-gradient(90deg, #fbb32d, #7f5af0);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     form.contact-form {
